@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elenir Kujat - Sua Casa dos Sonhos Te Espera</title>
+    <script src="https://instagram.fops4-1.fna.fbcdn.net/v/t51.2885-19/560631857_18421818880107968_1364321461106217986_n.jpg?stp=dst-jpg_s150x150_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLmRqYW5nby4xMDgwLmMyIn0&_nc_ht=instagram.fops4-1.fna.fbcdn.net&_nc_cat=108&_nc_oc=Q6cZ2QHWhJeAUe00_d3bJrf8qvruuY_ZRMtxPxdJptdN_wIyQ4T3CGLuF0tFMSqrOD877miYiy9HKDoQ5svOOOElNngK&_nc_ohc=kJVeUPYWVIMQ7kNvwFhcbyI&_nc_gid=fP_AVLAfq5iN_FLJ0qIT4Q&edm=AP4sbd4BAAAA&ccb=7-5&oh=00_AfeBPm1DsKZXTRUddj-DCKeggs6-VlxWdumwZopQnDm5GQ&oe=68FD637E&_nc_sid=7a9f4b"></script>
+    <style>
+        body {
+            box-sizing: border-box;
+        }
+        
+        .gradient-bg {
+            background: linear-gradient(135deg, #8B4513 0%, #A0522D 50%, #D2B48C 100%);
+        }
+        
+        .parallax-bg {
+            background: linear-gradient(rgba(139, 69, 19, 0.8), rgba(160, 82, 45, 0.8)), 
+                        linear-gradient(45deg, #f5f5dc 25%, transparent 25%), 
+                        linear-gradient(-45deg, #f5f5dc 25%, transparent 25%);
+            background-size: 100% 100%, 20px 20px, 20px 20px;
+            background-position: 0 0, 0 0, 10px 10px;
+        }
+        
+        .fade-in {
+            opacity: 0;
+            transform: translateY(30px);
+            animation: fadeInUp 0.8s ease forwards;
+        }
+        
+        .fade-in:nth-child(1) { animation-delay: 0.1s; }
+        .fade-in:nth-child(2) { animation-delay: 0.2s; }
+        .fade-in:nth-child(3) { animation-delay: 0.3s; }
+        .fade-in:nth-child(4) { animation-delay: 0.4s; }
+        
+        @keyframes fadeInUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        .hover-lift {
+            transition: all 0.3s ease;
+        }
+        
+        .hover-lift:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 35px rgba(139, 69, 19, 0.2);
+        }
+        
+        .floating {
+            animation: floating 3s ease-in-out infinite;
+        }
+        
+        @keyframes floating {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+        }
+    </style>
+</head>
+<body class="min-h-full bg-gradient-to-br from-stone-50 via-amber-50 to-stone-100">
+    
+    <!-- Hero Section -->
+    <header class="parallax-bg min-h-screen flex items-center justify-center relative overflow-hidden">
+        <div class="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-stone-900/20"></div>
+        <div class="container mx-auto px-6 text-center relative z-10">
+            <div class="floating mb-8">
+                <div class="w-40 h-40 mx-auto bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center shadow-2xl border border-white/30">
+                    <svg class="w-20 h-20 text-white" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/>
+                    </svg>
+                </div>
+            </div>
+            <h1 class="text-5xl md:text-7xl font-bold text-white mb-6 leading-tight">
+                Elenir Kujat
+            </h1>
+            <p class="text-xl md:text-2xl text-white/90 mb-4 font-light">
+                Transformando sonhos em endereços
+            </p>
+            <p class="text-lg text-white/80 max-w-2xl mx-auto leading-relaxed">
+                Sua parceira de confiança na busca pelo lar perfeito. 
+                Cada chave entregue é uma nova história que começa.
+            </p>
+        </div>
+        
+        <!-- Scroll indicator -->
+        <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 text-white/70">
+            <div class="animate-bounce">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"/>
+                </svg>
+            </div>
+        </div>
+    </header>
+
+    <!-- Story Section -->
+    <main class="py-20">
+        <div class="container mx-auto px-6">
+            <!-- Intro Story -->
+            <section class="max-w-4xl mx-auto text-center mb-20">
+                <h2 class="text-4xl md:text-5xl font-bold text-stone-800 mb-8">
+                    Sua jornada para o lar perfeito começa aqui
+                </h2>
+                <p class="text-xl text-stone-600 leading-relaxed mb-12">
+                    Imagine abrir a porta de casa e sentir que finalmente chegou onde sempre quis estar. 
+                    Esse momento mágico é o que eu trabalho para proporcionar a cada cliente.
+                </p>
+            </section>
+
+            <!-- Services Grid -->
+            <section class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-20">
+                <div class="fade-in hover-lift bg-white rounded-2xl p-8 shadow-lg border border-stone-100">
+                    <div class="w-16 h-16 bg-gradient-to-br from-amber-400 to-amber-600 rounded-xl flex items-center justify-center mb-6 mx-auto">
+                        <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-stone-800 mb-4 text-center">Casas dos Sonhos</h3>
+                    <p class="text-stone-600 text-center leading-relaxed mb-6">
+                        Encontre a casa perfeita para sua família crescer e criar memórias inesquecíveis.
+                    </p>
+                    <a href="https://wa.me/5566996478520?text=Olá%20Elenir!%20Tenho%20interesse%20em%20comprar%20uma%20casa.%20Poderia%20me%20ajudar?" 
+                       target="_blank" rel="noopener noreferrer"
+                       class="block w-full bg-amber-600 hover:bg-amber-700 text-white font-semibold py-3 px-6 rounded-lg text-center transition-colors">
+                        Quero uma Casa
+                    </a>
+                </div>
+
+                <div class="fade-in hover-lift bg-white rounded-2xl p-8 shadow-lg border border-stone-100">
+                    <div class="w-16 h-16 bg-gradient-to-br from-stone-500 to-stone-700 rounded-xl flex items-center justify-center mb-6 mx-auto">
+                        <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M17 11V3H7v4H3v14h8v-4h2v4h8V11h-4zM7 19H5v-2h2v2zm0-4H5v-2h2v2zm0-4H5V9h2v2zm4 8H9v-2h2v2zm0-4H9v-2h2v2zm0-4H9V9h2v2zm0-4H9V5h2v2zm4 12h-2v-2h2v2zm0-4h-2v-2h2v2zm4 4h-2v-2h2v2zm0-4h-2v-2h2v2z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-stone-800 mb-4 text-center">Apartamentos Modernos</h3>
+                    <p class="text-stone-600 text-center leading-relaxed mb-6">
+                        Praticidade e conforto no coração da cidade. Seu novo estilo de vida te espera.
+                    </p>
+                    <a href="https://wa.me/5566996478520?text=Olá%20Elenir!%20Estou%20procurando%20apartamentos%20para%20comprar.%20Você%20tem%20opções%20disponíveis?" 
+                       target="_blank" rel="noopener noreferrer"
+                       class="block w-full bg-stone-600 hover:bg-stone-700 text-white font-semibold py-3 px-6 rounded-lg text-center transition-colors">
+                        Ver Apartamentos
+                    </a>
+                </div>
+
+                <div class="fade-in hover-lift bg-white rounded-2xl p-8 shadow-lg border border-stone-100">
+                    <div class="w-16 h-16 bg-gradient-to-br from-amber-500 to-amber-700 rounded-xl flex items-center justify-center mb-6 mx-auto">
+                        <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-stone-800 mb-4 text-center">Além de Sinop</h3>
+                    <p class="text-stone-600 text-center leading-relaxed mb-6">
+                        Explore oportunidades em outras cidades. Novos horizontes, novas possibilidades.
+                    </p>
+                    <a href="https://wa.me/5566996478520?text=Olá%20Elenir!%20Gostaria%20de%20conhecer%20imóveis%20fora%20de%20Sinop.%20Que%20opções%20você%20tem?" 
+                       target="_blank" rel="noopener noreferrer"
+                       class="block w-full bg-amber-600 hover:bg-amber-700 text-white font-semibold py-3 px-6 rounded-lg text-center transition-colors">
+                        Explorar Regiões
+                    </a>
+                </div>
+
+                <div class="fade-in hover-lift bg-white rounded-2xl p-8 shadow-lg border border-stone-100">
+                    <div class="w-16 h-16 bg-gradient-to-br from-stone-400 to-stone-600 rounded-xl flex items-center justify-center mb-6 mx-auto">
+                        <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-stone-800 mb-4 text-center">Consultoria Completa</h3>
+                    <p class="text-stone-600 text-center leading-relaxed mb-6">
+                        Tire todas suas dúvidas. Estou aqui para guiar você em cada passo da jornada.
+                    </p>
+                    <a href="https://wa.me/5566996478520?text=Olá%20Elenir!%20Gostaria%20de%20mais%20informações%20sobre%20seus%20serviços%20como%20corretora." 
+                       target="_blank" rel="noopener noreferrer"
+                       class="block w-full bg-stone-600 hover:bg-stone-700 text-white font-semibold py-3 px-6 rounded-lg text-center transition-colors">
+                        Saber Mais
+                    </a>
+                </div>
+            </section>
+
+            <!-- CTA Section -->
+            <section class="gradient-bg rounded-3xl p-12 text-center text-white shadow-2xl">
+                <h2 class="text-3xl md:text-4xl font-bold mb-6">
+                    Pronto para encontrar seu novo lar?
+                </h2>
+                <p class="text-xl mb-8 opacity-90 max-w-2xl mx-auto">
+                    Cada conversa é o primeiro passo para uma nova história. 
+                    Vamos descobrir juntos onde sua felicidade vai morar.
+                </p>
+
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-stone-800 text-white py-12">
+        <div class="container mx-auto px-6 text-center">
+            <div class="mb-6">
+                <h3 class="text-2xl font-bold mb-2">Elenir Kujat</h3>
+                <p class="text-stone-300">Corretora de Imóveis</p>
+            </div>
+            <p class="text-stone-400 mb-4">
+                Transformando sonhos em endereços
+            </p>
+            <div class="text-stone-500 text-sm">
+                <p>© 2024 Elenir Kujat - Todos os direitos reservados</p>
+                <p class="mt-2">🏡 Seu próximo lar está aqui!</p>
+                <p class="mt-4 border-t border-stone-600 pt-4">
+                    Site desenvolvido por 
+                    <a href="https://www.instagram.com/szmktdigital/" target="_blank" rel="noopener noreferrer" 
+                       class="text-amber-400 hover:text-amber-300 font-semibold transition-colors">
+                        SZ MKT DIGITAL
+                    </a>
+                </p>
+            </div>
+        </footer>
+    </footer>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'99216cacd7def25e',t:'MTc2MTA1NjcyOS4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>
